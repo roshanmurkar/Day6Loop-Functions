@@ -1,6 +1,7 @@
 #!/bin/bash -x
 
 
+
 read -p "Enter the value of n: " n
 base=2;
 
@@ -67,3 +68,14 @@ do
 	m=`expr $m + 1` 
 
 done
+
+read -p "Enter a number" num
+fact=1
+ 
+for((i=2;i<=num;i++))
+{
+  fact=$((fact*i))
+}
+ 
+echo $fact
+
